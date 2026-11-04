@@ -1,0 +1,20 @@
+{
+ "video": "project_video.mp4",
+ "method": "kalman_two_stage",
+ "start_s": 0.0,
+ "frames_processed": 630,
+ "processed_fps": 12.5,
+ "tracks_reported": 28,
+ "median_track_frames": 7.0,
+ "longest_track_frames": 344,
+ "high_confidence_detections": 1000,
+ "detector_ms_per_frame": 54.4,
+ "tracker_ms_per_frame": 0.46,
+ "settings": {
+  "high_score": 0.4,
+  "low_score": 0.1,
+  "match_iou": 0.2,
+  "max_age": 5,
+  "min_hits": 3
+ }
+}

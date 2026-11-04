@@ -1,0 +1,86 @@
+{
+ "tune_sequences": [
+  1,
+  6,
+  8,
+  10,
+  12
+ ],
+ "kalman_params": {
+  "position_noise": 0.025,
+  "velocity_noise": 0.05,
+  "measurement_noise": 0.05
+ },
+ "methods": {
+  "iou": {
+   "method": "iou",
+   "settings": {
+    "high_score": 3.0,
+    "low_score": 3.0,
+    "match_iou": 0.2,
+    "max_age": 3,
+    "min_hits": 2
+   },
+   "idf1": 0.8753,
+   "mota": 0.8517,
+   "switches": 35.0,
+   "score": 0.8635
+  },
+  "kalman": {
+   "method": "kalman",
+   "settings": {
+    "high_score": 3.0,
+    "low_score": 3.0,
+    "match_iou": 0.1,
+    "max_age": 5,
+    "min_hits": 2
+   },
+   "idf1": 0.9159,
+   "mota": 0.8673,
+   "switches": 6.0,
+   "score": 0.8916
+  },
+  "kalman_two_stage": {
+   "method": "kalman_two_stage",
+   "settings": {
+    "high_score": 5.0,
+    "low_score": 1.0,
+    "match_iou": 0.2,
+    "max_age": 5,
+    "min_hits": 1
+   },
+   "idf1": 0.9252,
+   "mota": 0.8603,
+   "switches": 7.0,
+   "score": 0.89275
+  },
+  "gru": {
+   "method": "gru",
+   "settings": {
+    "high_score": 3.0,
+    "low_score": 3.0,
+    "match_iou": 0.1,
+    "max_age": 5,
+    "min_hits": 3
+   },
+   "idf1": 0.9098,
+   "mota": 0.8634,
+   "switches": 11.0,
+   "score": 0.8866
+  },
+  "gru_two_stage": {
+   "method": "gru_two_stage",
+   "settings": {
+    "high_score": 5.0,
+    "low_score": 1.0,
+    "match_iou": 0.2,
+    "max_age": 5,
+    "min_hits": 1
+   },
+   "idf1": 0.9243,
+   "mota": 0.8595,
+   "switches": 8.0,
+   "score": 0.8919
+  }
+ }
+}
