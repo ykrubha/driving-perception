@@ -1,5 +1,7 @@
 # Video-Based Driving Perception
 
+[![tests](https://github.com/ykrubha/driving-perception/actions/workflows/tests.yml/badge.svg)](https://github.com/ykrubha/driving-perception/actions/workflows/tests.yml)
+
 A camera perception pipeline for driving video: vehicle detection, multi-object tracking built from scratch, and a learned temporal motion model. The tracker is scored on real KITTI tracking sequences, against baselines, with a held-out test set.
 
 ![Vehicle tracking on highway dash-cam video](assets/tracking.gif)
